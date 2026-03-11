@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../../i18n/useLanguage';
+import { useCurrency } from '../../i18n/useCurrency';
 import './ProductCard.css';
 
 function ProductCard({ product }) {
   const { t } = useLanguage();
+  const { formatPrice } = useCurrency();
   const lowestPrice = Math.min(...product.plans.map((p) => p.price));
   const hasMultiplePlans = product.plans.length > 1;
 
@@ -18,7 +20,7 @@ function ProductCard({ product }) {
         <p>{t(`p${product.id}_short`)}</p>
         <div className="product-card-footer">
           <span className="product-card-price">
-            {hasMultiplePlans ? `${t('from')} ` : ''}${lowestPrice.toFixed(2)}
+            {hasMultiplePlans ? `${t('from')} ` : ''}{formatPrice(lowestPrice)}
           </span>
           <Link to={`/product/${product.id}`} className="product-card-btn">
             {t('view_details')}

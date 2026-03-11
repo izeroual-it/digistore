@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import { useState } from 'react';
 import { FiShield, FiZap, FiCheckCircle } from 'react-icons/fi';
 import { useLanguage } from '../i18n/useLanguage';
+import { useCurrency } from '../i18n/useCurrency';
 import products from '../data/products';
 import { WHATSAPP_NUMBER } from '../config/whatsapp';
 import './ProductDetail.css';
@@ -11,6 +12,7 @@ function ProductDetail() {
   const product = products.find((p) => p.id === parseInt(id));
   const [selectedPlan, setSelectedPlan] = useState(0);
   const { t } = useLanguage();
+  const { formatPrice } = useCurrency();
 
   if (!product) {
     return (
@@ -28,7 +30,7 @@ function ProductDetail() {
       `${t('wa_message_intro')}\n\n` +
       `📦 *${product.title}*\n` +
       `⏱ ${t('wa_message_plan')}: *${currentPlan.label}*\n` +
-      `💰 ${t('wa_message_price')}: *$${currentPlan.price.toFixed(2)}*\n\n` +
+      `💰 ${t('wa_message_price')}: *${formatPrice(currentPlan.price)}*\n\n` +
       `${t('wa_message_outro')}`;
 
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
@@ -50,7 +52,7 @@ function ProductDetail() {
 
           <div className="detail-info">
             <h1>{product.title}</h1>
-            <p className="detail-price">${currentPlan.price.toFixed(2)}</p>
+            <p className="detail-price">{formatPrice(currentPlan.price)}</p>
 
             {product.plans.length > 1 && (
               <div className="plan-selector">
@@ -63,7 +65,7 @@ function ProductDetail() {
                       onClick={() => setSelectedPlan(index)}
                     >
                       <span className="plan-label">{plan.label}</span>
-                      <span className="plan-price">${plan.price.toFixed(2)}</span>
+                      <span className="plan-price">{formatPrice(plan.price)}</span>
                     </button>
                   ))}
                 </div>
@@ -82,7 +84,7 @@ function ProductDetail() {
             </div>
 
             <button className="buy-btn" onClick={handleBuyNow}>
-              {t('order_whatsapp')} — ${currentPlan.price.toFixed(2)}
+              {t('order_whatsapp')} — {formatPrice(currentPlan.price)}
             </button>
 
             <div className="detail-trust">

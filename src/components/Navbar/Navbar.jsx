@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
 import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
+import CurrencySwitcher from '../CurrencySwitcher/CurrencySwitcher';
 import { useLanguage } from '../../i18n/useLanguage';
 import './Navbar.css';
 
@@ -38,6 +39,7 @@ function Navbar() {
             </li>
           </ul>
           <LanguageSwitcher />
+          <CurrencySwitcher />
           <ThemeToggle />
           <button
             className={`navbar-toggle ${menuOpen ? 'active' : ''}`}

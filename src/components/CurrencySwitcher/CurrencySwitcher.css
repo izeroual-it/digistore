@@ -1,0 +1,34 @@
+.currency-switcher {
+  display: flex;
+  gap: 2px;
+  background: var(--toggle-bg);
+  border-radius: 8px;
+  padding: 2px;
+}
+
+.currency-btn {
+  padding: 4px 8px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 32px;
+  min-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.currency-btn:hover {
+  color: var(--text-primary);
+}
+
+.currency-btn.active {
+  background: var(--accent);
+  color: #fff;
+}
+
