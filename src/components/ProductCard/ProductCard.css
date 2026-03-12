@@ -1,4 +1,4 @@
-﻿.product-card {
+﻿﻿.product-card {
   background: var(--card-bg);
   border-radius: 16px;
   overflow: hidden;
@@ -91,7 +91,13 @@
     height: 180px;
   }
   .product-card-body {
-    padding: 1.2rem;
+    padding: 1rem;
+  }
+  .product-card-body h3 {
+    font-size: 1rem;
+  }
+  .product-card-body p {
+    font-size: 0.85rem;
   }
   .product-card-footer {
     flex-direction: column;
@@ -100,6 +106,7 @@
   }
   .product-card-price {
     text-align: center;
+    font-size: 1.15rem;
   }
   .product-card-btn {
     text-align: center;

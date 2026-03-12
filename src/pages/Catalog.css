@@ -1,4 +1,4 @@
-﻿.catalog-header {
+﻿﻿.catalog-header {
   text-align: center;
   padding: 3rem 2rem;
   background: var(--gradient-catalog);
@@ -69,7 +69,7 @@
 }
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 2rem;
 }
 .no-results {
@@ -101,15 +101,22 @@
   }
   .catalog-filters {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     gap: 0.5rem;
-    justify-content: center;
+    padding-bottom: 0.5rem;
+    scrollbar-width: none;
+  }
+  .catalog-filters::-webkit-scrollbar {
+    display: none;
   }
   .filter-btn {
-    min-height: 44px;
-    padding: 0.5rem 1rem;
+    min-height: 40px;
+    padding: 0.4rem 1rem;
     font-size: 0.85rem;
-    flex: 0 1 auto;
+    flex-shrink: 0;
+    white-space: nowrap;
   }
   .products-grid {
     grid-template-columns: 1fr;

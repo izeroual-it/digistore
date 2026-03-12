@@ -130,13 +130,36 @@ button {
   direction: rtl;
 }
 
+[dir="rtl"] .product-card-category {
+  right: auto;
+  left: 12px;
+}
+
+[dir="rtl"] .detail-category {
+  right: auto;
+  left: 16px;
+}
+
 [dir="rtl"] .footer-container {
   text-align: right;
+}
+
+[dir="rtl"] .catalog-filters {
+  direction: rtl;
+}
+
+[dir="rtl"] .verified-badge {
+  margin-left: 0;
+  margin-right: auto;
 }
 
 @media (max-width: 768px) {
   [dir="rtl"] .footer-container {
     text-align: center;
+  }
+  [dir="rtl"] .navbar-links a.active {
+    border-right: none;
+    border-left: 3px solid var(--accent);
   }
 }
 

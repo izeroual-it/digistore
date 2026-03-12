@@ -32,3 +32,16 @@
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  .lang-switcher {
+    gap: 1px;
+    padding: 1px;
+  }
+  .lang-btn {
+    padding: 3px 6px;
+    font-size: 0.65rem;
+    min-width: 26px;
+    min-height: 24px;
+  }
+}
+
