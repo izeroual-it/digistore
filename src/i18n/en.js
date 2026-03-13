@@ -96,106 +96,70 @@ const en = {
   footer_seller: 'Verified Seller',
 
   // ─── Product Descriptions ─────────────────────────────────────────────────
-  // 1 - CapCut Pro
-  p1_short: 'Premium video editing — no watermark, AI effects.',
-  p1_desc: 'Access all premium video editing features, no watermarks, advanced AI effects, background removal, and unlimited exports at an unbeatable shared price.',
-  p1_f1: 'No watermark', p1_f2: 'Advanced AI effects', p1_f3: 'Background removal', p1_f4: 'Unlimited exports', p1_f5: 'Instant delivery',
-  // 2 - Canva Pro
-  p2_short: 'Professional design tools — templates, brand kit & more.',
-  p2_desc: 'Unlock premium templates, brand kit, background remover, magic resize, and all professional design tools for creators and businesses.',
-  p2_f1: 'Premium templates', p2_f2: 'Brand kit', p2_f3: 'Background remover', p2_f4: 'Magic resize', p2_f5: 'Instant delivery',
-  // 3 - Microsoft 365
-  p3_short: 'Word, Excel, PowerPoint, Teams & OneDrive.',
-  p3_desc: 'Full access to Word, Excel, PowerPoint, Outlook, Teams, and OneDrive cloud storage at a heavily discounted shared price.',
-  p3_f1: 'Word, Excel, PowerPoint', p3_f2: 'Teams & Outlook', p3_f3: 'OneDrive storage', p3_f4: 'Multi-device', p3_f5: 'Instant access',
-  // 4 - Adobe Creative Cloud
-  p4_short: 'Photoshop, Premiere Pro & 20+ creative apps.',
-  p4_desc: 'Access Photoshop, Illustrator, Premiere Pro, After Effects, Lightroom, InDesign, and 20+ professional creative apps.',
-  p4_f1: 'Photoshop & Illustrator', p4_f2: 'Premiere Pro & After Effects', p4_f3: 'Lightroom included', p4_f4: '20+ creative apps', p4_f5: 'Cloud storage',
-  // 5 - Figma Professional
-  p5_short: 'UI/UX design, prototyping & collaboration.',
-  p5_desc: 'Collaborate on UI/UX designs, build component libraries, prototype interactively, and share with your team in real time.',
-  p5_f1: 'Unlimited projects', p5_f2: 'Component libraries', p5_f3: 'Interactive prototyping', p5_f4: 'Real-time collaboration', p5_f5: 'Instant delivery',
-  // 6 - Grammarly Premium
-  p6_short: 'AI writing assistant — grammar, style & plagiarism check.',
-  p6_desc: 'AI-powered writing assistant with advanced grammar, style, clarity, tone, and plagiarism detection suggestions across all your apps.',
-  p6_f1: 'Advanced grammar checks', p6_f2: 'Style suggestions', p6_f3: 'Tone detection', p6_f4: 'Plagiarism detection', p6_f5: 'Instant delivery',
-  // 7 - Notion Plus
-  p7_short: 'All-in-one workspace — unlimited blocks & uploads.',
-  p7_desc: 'Unlimited blocks, unlimited file uploads, 30-day version history, and invite up to 100 guests for your workspace.',
-  p7_f1: 'Unlimited blocks', p7_f2: 'Unlimited file uploads', p7_f3: '30-day history', p7_f4: '100 guest invites', p7_f5: 'Instant delivery',
-  // 8 - Netflix Premium
-  p8_short: '4K UHD streaming — full Netflix library.',
-  p8_desc: 'Stream 4K UHD content on multiple screens with access to the full Netflix library of movies, series, and documentaries.',
-  p8_f1: '4K UHD streaming', p8_f2: 'Full Netflix library', p8_f3: 'Multi-screen', p8_f4: 'Instant activation', p8_f5: 'Verified account',
-  // 9 - Disney+
-  p9_short: 'Marvel, Star Wars, Pixar & Disney in 4K.',
-  p9_desc: 'Stream Marvel, Star Wars, Pixar, Disney classics, and National Geographic in HD/4K at a fraction of the official price.',
-  p9_f1: 'Marvel & Star Wars', p9_f2: 'Disney & Pixar', p9_f3: '4K streaming', p9_f4: 'Instant activation', p9_f5: 'Verified account',
-  // 10 - YouTube Premium
-  p10_short: 'Ad-free YouTube + YouTube Music included.',
-  p10_desc: 'Enjoy ad-free videos, background play, YouTube Music included, and offline downloads on all your devices.',
-  p10_f1: 'Ad-free YouTube', p10_f2: 'Background play', p10_f3: 'YouTube Music included', p10_f4: 'Offline downloads', p10_f5: 'Verified account',
-  // 11 - Crunchyroll Premium
-  p11_short: 'Thousands of anime — simulcasts, ad-free HD.',
-  p11_desc: 'Stream thousands of anime titles, simulcasts, exclusive series, and manga in HD with no ads.',
-  p11_f1: 'Thousands of anime', p11_f2: 'Simulcasts', p11_f3: 'Ad-free HD', p11_f4: 'Exclusive series', p11_f5: 'Verified account',
-  // 12 - Max (HBO Max)
-  p12_short: 'HBO originals, Warner Bros. & DC in 4K.',
-  p12_desc: 'Watch HBO originals, Warner Bros. movies, DC content, and exclusive Max originals in 4K.',
-  p12_f1: 'HBO originals', p12_f2: 'Warner Bros. & DC', p12_f3: '4K streaming', p12_f4: 'Shared family plan', p12_f5: 'Instant activation',
-  // 13 - Paramount+
-  p13_short: 'Paramount originals, live CBS & sports.',
-  p13_desc: 'Access Paramount originals, live CBS, Nickelodeon, MTV, BET, and exclusive sports content.',
-  p13_f1: 'Paramount originals', p13_f2: 'Live CBS', p13_f3: 'Sports content', p13_f4: 'Nickelodeon & MTV', p13_f5: 'Instant activation',
-  // 14 - Peacock Premium
-  p14_short: 'NBC originals, live sports & on-demand.',
-  p14_desc: 'Watch NBC originals, live sports, movies, reality TV, and thousands of hours of on-demand entertainment.',
-  p14_f1: 'NBC originals', p14_f2: 'Live sports', p14_f3: 'On-demand movies', p14_f4: 'Shared plan', p14_f5: 'Instant activation',
-  // 15 - Apple TV+
-  p15_short: 'Apple originals in 4K HDR Dolby Vision.',
-  p15_desc: 'Stream award-winning Apple originals like Ted Lasso, Severance, The Morning Show, and more in 4K HDR Dolby Vision.',
-  p15_f1: 'Apple originals', p15_f2: '4K HDR Dolby Vision', p15_f3: 'Exclusive series', p15_f4: 'Shared plan', p15_f5: 'Instant activation',
-  // 16 - Spotify Premium
-  p16_short: 'Ad-free music, unlimited skips & offline.',
-  p16_desc: 'Listen to 100M+ songs ad-free with unlimited skips, offline listening, and high-quality audio streaming across all devices.',
-  p16_f1: 'Ad-free music', p16_f2: 'Unlimited skips', p16_f3: 'Offline listening', p16_f4: 'High-quality audio', p16_f5: 'Verified account',
-  // 17 - Deezer Premium
-  p17_short: '90M+ tracks, HiFi audio & Flow radio.',
-  p17_desc: 'Enjoy 90M+ tracks, HiFi audio quality, offline mode, Flow personalized radio, and lyrics display.',
-  p17_f1: '90M+ tracks', p17_f2: 'HiFi audio', p17_f3: 'Offline mode', p17_f4: 'Flow radio', p17_f5: 'Lyrics display',
-  // 18 - Tidal Premium
-  p18_short: 'Lossless HiFi audio — 100M+ tracks.',
-  p18_desc: 'Stream lossless HiFi and MQA audio, exclusive artist content, and 100M+ tracks with the highest audio fidelity available.',
-  p18_f1: 'Lossless HiFi audio', p18_f2: 'MQA support', p18_f3: '100M+ tracks', p18_f4: 'Exclusive content', p18_f5: 'Instant delivery',
-  // 19 - Apple Music
-  p19_short: '100M+ songs, lossless audio & Dolby Atmos.',
-  p19_desc: 'Access 100M+ songs in lossless audio, spatial audio with Dolby Atmos, curated playlists, and radio stations.',
-  p19_f1: '100M+ songs', p19_f2: 'Lossless audio', p19_f3: 'Dolby Atmos', p19_f4: 'Curated playlists', p19_f5: 'Instant delivery',
-  // 20 - ChatGPT Plus
-  p20_short: 'GPT-4o, image generation & data analysis.',
-  p20_desc: "Access OpenAI's GPT-4o model with faster responses, DALL·E image generation, advanced data analysis, browsing, and priority access to new features.",
-  p20_f1: 'GPT-4o model', p20_f2: 'DALL·E image generation', p20_f3: 'Advanced data analysis', p20_f4: 'Priority access', p20_f5: 'Verified account',
-  // 21 - Midjourney
-  p21_short: 'AI image generation — high-res artwork.',
-  p21_desc: "Generate stunning, high-resolution AI artwork and images using one of the world's most powerful image generation models.",
-  p21_f1: 'AI image generation', p21_f2: 'High-res outputs', p21_f3: 'Commercial use', p21_f4: 'Discord integration', p21_f5: 'Instant delivery',
-  // 22 - Duolingo Plus
-  p22_short: 'Learn 40+ languages — ad-free & offline.',
-  p22_desc: 'Learn any of 40+ languages ad-free with unlimited hearts, progress tracking, offline lessons, and no interruptions.',
-  p22_f1: 'Ad-free learning', p22_f2: 'Unlimited hearts', p22_f3: 'Offline lessons', p22_f4: '40+ languages', p22_f5: 'Verified account',
-  // 23 - Coursera Plus
-  p23_short: '7,000+ courses from top universities.',
-  p23_desc: 'Unlimited access to 7,000+ courses, professional certificates, and degrees from top universities like Stanford, Google, and IBM.',
-  p23_f1: '7,000+ courses', p23_f2: 'Professional certificates', p23_f3: 'Top university content', p23_f4: 'Offline learning', p23_f5: 'Instant delivery',
-  // 24 - TradingView Pro
-  p24_short: 'Real-time charts, alerts & market data.',
-  p24_desc: 'Access real-time market data, advanced charting tools, 5 indicators per chart, alerts, and no ads for serious traders.',
-  p24_f1: 'Real-time market data', p24_f2: 'Advanced charting', p24_f3: '5 indicators/chart', p24_f4: 'Custom alerts', p24_f5: 'Instant delivery',
-  // 25 - Semrush Pro
-  p25_short: 'SEO toolkit — keywords, backlinks & rank tracking.',
-  p25_desc: 'Industry-leading SEO toolkit with keyword research, competitor analysis, backlink audits, site audit, and rank tracking.',
-  p25_f1: 'Keyword research', p25_f2: 'Competitor analysis', p25_f3: 'Backlink audit', p25_f4: 'Rank tracking', p25_f5: 'Instant delivery',
+  // 1 - Netflix Premium 4K
+  p1_short: '4K UHD streaming — full Netflix library, multi-screen.',
+  p1_desc: 'Stream the entire Netflix library in stunning 4K UHD quality on multiple screens. Access thousands of movies, series, and documentaries with your own dedicated profile.',
+  p1_f1: '4K UHD streaming', p1_f2: 'Full Netflix library', p1_f3: 'Multi-screen access', p1_f4: 'Personal profile', p1_f5: 'Instant activation',
+  // 2 - Amazon Prime Video
+  p2_short: 'Stream movies, series & exclusives on Prime Video.',
+  p2_desc: 'Access Amazon Prime Video\'s vast library of movies, TV series, Amazon Originals, and live sports. Stream on multiple devices with high-quality video.',
+  p2_f1: 'Amazon Originals', p2_f2: 'Thousands of movies & series', p2_f3: 'Multi-device streaming', p2_f4: 'HD & 4K quality', p2_f5: 'Instant activation',
+  // 3 - Shahid VIP
+  p3_short: 'Arabic content, exclusive shows & live TV.',
+  p3_desc: 'Access the largest Arabic streaming library with exclusive Shahid Originals, latest movies, Turkish series dubbed in Arabic, and live TV channels. Available in Mobile or TV plans.',
+  p3_f1: 'Shahid Originals', p3_f2: 'Arabic & dubbed content', p3_f3: 'Live TV channels', p3_f4: 'Mobile or TV access', p3_f5: 'Verified account',
+  // 4 - TOD Full HD
+  p4_short: 'Live sports, beIN SPORTS & premium entertainment.',
+  p4_desc: 'Stream live sports including football, basketball, tennis, and more via beIN SPORTS channels. Plus access premium entertainment, movies, and series in Full HD quality.',
+  p4_f1: 'beIN SPORTS live', p4_f2: 'Full HD quality', p4_f3: 'Premium entertainment', p4_f4: 'Multi-device access', p4_f5: 'Instant activation',
+  // 5 - Crunchyroll Premium
+  p5_short: 'Thousands of anime — simulcasts, ad-free HD.',
+  p5_desc: 'Stream thousands of anime titles, simulcasts, exclusive series, and manga in HD with no ads. Access the world\'s largest anime library with new episodes right after Japan broadcast.',
+  p5_f1: 'Thousands of anime', p5_f2: 'Simulcasts from Japan', p5_f3: 'Ad-free HD streaming', p5_f4: 'Exclusive series', p5_f5: 'Verified account',
+  // 6 - IPTV Bouquet
+  p6_short: 'Live TV channels — sports, movies & international.',
+  p6_desc: 'Access a premium IPTV bouquet with thousands of live TV channels from around the world. Includes sports, movies, entertainment, news, and kids channels in HD/4K quality.',
+  p6_f1: 'Thousands of channels', p6_f2: 'Sports & live events', p6_f3: 'HD/4K quality', p6_f4: 'International channels', p6_f5: 'Multi-device support',
+  // 7 - Spotify Premium
+  p7_short: 'Ad-free music, unlimited skips & offline listening.',
+  p7_desc: 'Listen to 100M+ songs ad-free with unlimited skips, offline listening, and high-quality audio streaming across all your devices. Create playlists and discover new music.',
+  p7_f1: 'Ad-free music', p7_f2: 'Unlimited skips', p7_f3: 'Offline listening', p7_f4: 'High-quality audio', p7_f5: 'Verified account',
+  // 8 - ChatGPT 5 Plus
+  p8_short: 'GPT-5, image generation & advanced data analysis.',
+  p8_desc: 'Access OpenAI\'s latest GPT-5 model with faster responses, DALL·E image generation, advanced data analysis, web browsing, and priority access to all new features.',
+  p8_f1: 'GPT-5 model access', p8_f2: 'DALL·E image generation', p8_f3: 'Advanced data analysis', p8_f4: 'Web browsing', p8_f5: 'Priority access',
+  // 9 - Perplexity AI Pro
+  p9_short: 'AI-powered search — unlimited Pro queries.',
+  p9_desc: 'Get the most advanced AI search engine with unlimited Pro searches, file uploads, image generation, and access to multiple AI models including GPT-4 and Claude.',
+  p9_f1: 'Unlimited Pro searches', p9_f2: 'File upload & analysis', p9_f3: 'Image generation', p9_f4: 'Multi-model access', p9_f5: 'Verified account',
+  // 10 - Canva Pro
+  p10_short: 'Professional design tools — templates, brand kit & more.',
+  p10_desc: 'Unlock premium templates, brand kit, background remover, magic resize, and all professional design tools for creators and businesses. Access 100M+ stock photos and graphics.',
+  p10_f1: 'Premium templates', p10_f2: 'Brand kit', p10_f3: 'Background remover', p10_f4: 'Magic resize', p10_f5: '100M+ stock assets',
+  // 11 - Adobe Creative Cloud
+  p11_short: 'Photoshop, Premiere Pro & 20+ creative apps.',
+  p11_desc: 'Access Photoshop, Illustrator, Premiere Pro, After Effects, Lightroom, InDesign, and 20+ professional creative apps. The complete suite for designers, video editors, and photographers.',
+  p11_f1: 'Photoshop & Illustrator', p11_f2: 'Premiere Pro & After Effects', p11_f3: 'Lightroom included', p11_f4: '20+ creative apps', p11_f5: 'Cloud storage',
+  // 12 - Microsoft Office 365 Pro Plus
+  p12_short: 'Word, Excel, PowerPoint, Teams & OneDrive — lifetime.',
+  p12_desc: 'Full access to Word, Excel, PowerPoint, Outlook, Teams, and OneDrive cloud storage. Lifetime activation for Office 365 Pro Plus with all premium features included.',
+  p12_f1: 'Word, Excel, PowerPoint', p12_f2: 'Teams & Outlook', p12_f3: 'OneDrive storage', p12_f4: 'Lifetime activation', p12_f5: 'Multi-device',
+  // 13 - LinkedIn Premium
+  p13_short: 'InMail, profile insights & job tools.',
+  p13_desc: 'Stand out with LinkedIn Premium — send InMail to anyone, see who viewed your profile, access salary insights, LinkedIn Learning courses, and advanced job search tools.',
+  p13_f1: 'InMail messages', p13_f2: 'Profile viewers', p13_f3: 'Salary insights', p13_f4: 'LinkedIn Learning', p13_f5: 'Job search tools',
+  // 14 - IBO Pro Player
+  p14_short: 'IPTV player — lifetime activation.',
+  p14_desc: 'Activate IBO Pro Player for life on your device. The best IPTV player app with EPG support, favorites, multi-screen, and a smooth, user-friendly interface for all your IPTV subscriptions.',
+  p14_f1: 'Lifetime activation', p14_f2: 'EPG support', p14_f3: 'Multi-screen', p14_f4: 'Favorites management', p14_f5: 'User-friendly interface',
+  // 15 - Coursera Pro
+  p15_short: '7,000+ courses from top universities.',
+  p15_desc: 'Unlimited access to 7,000+ courses, professional certificates, and degrees from top universities like Stanford, Google, and IBM. Learn at your own pace with world-class content.',
+  p15_f1: '7,000+ courses', p15_f2: 'Professional certificates', p15_f3: 'Top university content', p15_f4: 'Learn at your pace', p15_f5: 'Instant delivery',
+  // 16 - Duolingo Premium
+  p16_short: 'Learn 40+ languages — ad-free & offline.',
+  p16_desc: 'Learn any of 40+ languages ad-free with unlimited hearts, progress tracking, offline lessons, mastery quizzes, and no interruptions. The world\'s #1 language learning app.',
+  p16_f1: 'Ad-free learning', p16_f2: 'Unlimited hearts', p16_f3: 'Offline lessons', p16_f4: '40+ languages', p16_f5: 'Mastery quizzes',
 };
 
 export default en;
